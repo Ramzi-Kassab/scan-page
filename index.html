@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Scanner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="html5-qrcode.min.js"></script>
+  <script src="script.js" defer></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; }
+    #reader { width: 100%; max-width: 400px; margin: auto; }
+    .field { margin-bottom: 10px; }
+    input { width: 100%; padding: 8px; font-size: 16px; }
+    button { padding: 10px; font-size: 16px; width: 100%; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Scan QR to Fill Form</h2>
+  <div id="reader"></div>
+  <div class="field"><input id="serial" placeholder="Serial Number"></div>
+  <div class="field"><input id="order" placeholder="Order Number"></div>
+  <div class="field"><input id="size" placeholder="Size"></div>
+  <button onclick="startScan()">📷 Scan QR</button>
+</body>
+</html>
